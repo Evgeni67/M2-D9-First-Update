@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<!--
+ASSIGNMENT RULES
+- The solution must be pushed to the repository and be available for the tutors by the end of the day
+- You can ask for tutor's help
+- You can google / use StackOverflow BUT we suggest you to use just the material provided
+- To test the page, just open it with your default browser.
+- Use Bootstrap4 classes to render the page.
+- Use correctly containers and rows in order to have a great display
+ASSIGNMENT TOPIC 
+You are creating a website to showcase your favourite albums.
+In this page you'd like to have a short bio of yourself, the top albums of your life, 
+the worst album you ever listen to and everything related to the music you love.
+IMPORTANT:
+Start from the previous assignment
+NOTE:
+Most of the time, even the most expert of designers, need inspiration.
+Spend 30 minutes surfing the web and searching for the way of rapresenting album that you like the most.
+Could be the Amazon way, the Spotify or Apple music way or some other blog out there.
+-->
+
+<html>
+  <head>
+    <!-- IMPORT ALL THE BOOSTRAP RELATED CSS & SCRIPTS-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <style>
+      /* PREVIOUS STUFF */
+    </style>
+  </head>
+  <body>
+    <!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <style>
+      .button:hover {
+  box-shadow: 0 10px 50px rgba(0,0,0,1);
+}
+h1{
+    text-align: center;
+    font-size: 90px;
+    background-color: whitesmoke;
+    height: 120;
+    margin-left:750px;
+    margin-right:750px;
+}
+.row{
+    justify-content: space-evenly;
+    padding-top: 150px;
+
+}
+[src = "channels4_profile.jpg"]{
+    width: 300px;
+    height: 300px;
+}
+[src="channels4_profile.jpg"]:hover +div{
+    display: inline;
+}
+[class="card-body "]::after{
+content: "HIP HOP";
+margin:auto;
+padding-left: 5px;
+padding-right: 5px;
+color: red;
+border:black solid;
+}
+      </style>"
+  <body>
+      
+    <!-- Optional Java/pScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
+<!DOCTYPE html>
+<nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand"><img src = "png-file-tv-icon-png-free-clip-art-library-tv-icon-png-920_736.png" style="width:80px "></a>
+    <form class="form-inline">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </nav>
+      <nav aria-label="breadcrumb" style="width: 500px; background-color:black">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Library</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Data</li>
+        </ol>
+      </nav>
+<script>
+    let totalNumOfRows = 0;
+    const deleteRow = (element) =>{
+        if(element-tot)
+      let row = document.querySelectorAll(".row")[element-totalNumOfRows]
+     row.remove()
+     totalNumOfRows++;
+     console.log(+totalNumOfRows)
+      }
+    
+    </script>
+</div>
+<h1> Favourite </h1>
+<div class = "musicRows">
+    <div class = "row">
+<div clas = "col col-3">
+    <button class = "button" onclick="deleteRow(1)">Delete Row </button>
+<div class="card" style="width: 18.8rem;">
+    <img class="card-img-top" src="channels4_profile.jpg" alt="Card image cap">
+    <div class="card-body ">
+      <h5 class="card-title">XXXTENTACION</h5>
+      <p class="card-text">Look at me (02:07)</p>
+      <a href="#" class="btn btn-primary">Listen</a>
+      <a href="#" class="btn btn-primary" onclick="showInfo()">Show Info</a>
+    </div>
+    <div class=  "info d-none">
+      <p> Info Info Info Info Info Info Info Info Info Info  </p>
+      <button type="submit" class="btn btn-primary" onclick="hideInfo()">Close Info</button>
+      </div>
+    </form>
+  </div>
+</div>
+<div clas = "col col-3">
+    <div class="card" style="width: 18.8rem;">
+        <img class="card-img-top" src="channels4_profile.jpg" alt="Card image cap">
+        <div class="card-body ">
+          <h5 class="card-title">XXXTENTACION</h5>
+          <p class="card-text">Look at me (02:07)</p>
+          <a href="#" class="btn btn-primary">Listen</a>
+        </div>
+      </div>
+</div>
+<div clas = "col col-3">
+    <div class="card" style="width: 18.8rem;">
+        <img class="card-img-top" src="channels4_profile.jpg" alt="Card image cap">
+        <div class="card-body ">
+          <h5 class="card-title">XXXTENTACION</h5>
+          <p class="card-text">Look at me (02:07)</p>
+          <a href="#" class="btn btn-primary">Listen</a>
+        </div>
+      </div>
+</div>
+<div clas = "col col-3">
+    <div class="card" style="width: 18.8rem;">
+        <img class="card-img-top" src="channels4_profile.jpg" alt="Card image cap">
+        <div class="card-body ">
+          <h5 class="card-title">XXXTENTACION</h5>
+          <p class="card-text">Look at me (02:07)</p>
+          <a href="#" class="btn btn-primary">Listen</a>
+        </div>
+      </div>
+</div>
+</div>
+
+
+        <div class = "row">
+    <div clas = "col col-3" id="button">
+        <button class = "button " onclick="showTable()" style="width: 300px; height: 150px;"> <strong>Add Track</strong> </button>
+        <form type= "addTrackTable" class = "getMe d-none" style="background-color: black;">
+            <h3>Add Track</h3>
+            <div class="form-group">
+              <label for="exampleInputEmail1"><strong>Artist</strong></label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" style = "width: 300px">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1"><strong>Name</strong></label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" style = "width: 300px">
+              </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1"><strong>Length</strong></label>
+              <input type="password" class="form-control" id="exampleInputPassword1" style = "width: 300px">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1"><strong>Track Feuturing</strong></label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" style = "width: 300px">
+              </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1" >
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            
+            <button type="submit" class="btn btn-primary" onclick= "closeAddTab()">+</button>
+          </form>
+        </div></div>
+        </div></div>
+<div class = "row">
+    <div clas = "col col-3">
+<form style="background-color: black;">
+    <h3>Contact Us</h3>
+    <div class="form-group">
+      <label for="exampleInputEmail1"><strong>Email address</strong></label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" style = "width: 300px">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" style = "width: 300px">
+    </div>
+    <div class="form-group form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1" >
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  </div></div>
+<footer></footer>
+<style>
+    body{
+        background-image: url('xxx.jpg');
+        background-attachment:scroll;
+    }
+    .col.col-12{
+                text-align: center;
+    }
+    form{
+        text-align: center;
+        color:red;
+       border:black solid;
+    }
+</style>
+
+
+<script>
+    const closeAddTab = () => {
+
+    }
+const createTable = function(){
+     const body = document.getElementsByTagName("body")[0]
+     for (let index = 0; index < 12; index++) {
+         const tRow = document.createElement("div")
+         tRow.className = "row text-center"
+         for (let i = 0; i < 6; i++) {
+            const tCol = document.createElement("div")
+             tCol.className = "col col-2"
+             tCol.innerHTML = "Artist"
+              if(i === 0){
+                  tCol.id = index;
+                tCol.innerHTML = '<button type="button" onclick = "turnGreen(' + index + ')"">Add To PlayList</button>'
+              }else if(i === 1){
+                tCol.innerHTML = "Artist Name"
+              }else if(i === 2){
+                tCol.innerHTML = "Song Name"
+}else if(i === 3){
+    tCol.innerHTML = "Duaration (min:seconds)"
+}else if(i === 4){
+    tCol.innerHTML = "Views"
+}else if(i === 5){
+    tCol.innerHTML = "Likes"
+}
+tRow.appendChild(tCol)
+         }
+         body.appendChild(tRow)
+     }
+    }
+   const showTable =()=>{
+       let getTable = document.querySelector(".getMe")
+           getTable.classList.remove("d-none")
+       
+   }
+   const showInfo = () =>{
+    let getTable = document.querySelector(".info")
+           getTable.classList.remove("d-none")
+   }
+   const hideInfo = () =>{
+    let getTable = document.querySelector(".info")
+           getTable.classList.add("d-none")
+   }
+    </script>
+
+    <!-- EXERCISE 1
+        Use the specific bootstrap component to implement a Breadcrumb
+        -->
+
+    <!-- EXERCISE 2
+            Create a Jumbotron section with a quick explanation / image of the website
+        -->
+
+    <!-- EXERCISE 3
+            Foreach album in the favorite list, place the genre inside a badge
+        -->
+
+    <!-- EXERCISE 4
+            Foreach album in the favorite list, use the Bootstrap Card to contain it.
+            Use card layouts to format it in the best and more compatible way.
+        -->
+
+    <!-- EXERCISE 5
+            Place the tracklist inside a Bootstrap table.
+            The row column must be alternate.
+            Use one column for the track order, one of the title and one for the length.
+            (If you want, you can also add extra columns)
+        -->
+
+    <!-- EXERCISE 6
+            Add a DELETE bootstrap button on each row of the tracklist, with appropriate transitions on the various pseudo-class states 
+            which will apply for the subsequent button you'll use.
+            Clicking on the button the row must disappear. 
+            Add a fade-out effect using a CSS transition effect
+        -->
+
+    <!-- EXERCISE 7
+            Add a "Contact Me" form in the footer.
+            The "Contact Me" form has 2 fields:
+            - Email
+            - Text of the message
+            Use the correct Bootstrap styles for styling the buttons
+        -->
+
+    <!-- EXERCISE 8 
+            Add to the footer an extra column with the same links of the top nav.
+        -->
+
+    <!-- EXERCISE 9
+            Add a button "Add Track" under the track list the album, add a nice shadow transition when the button is hovered
+        -->
+
+    <!-- EXERCISE 10
+            On "Add Track" button, open a new modal.
+            The modal shall contain a form with:
+            - Track number
+            - Track name
+            - Track length
+            - Track featuring
+            - Live Track (checkbox)
+            The fields should be inside an Input Group and divided in 2 columns.
+        -->
+
+    <!-- EXERCISE 11
+            Add 2 bootstrap buttons at the bottom of the modal window:
+            - Close => clear the fields and close the modal
+            - Add => Add the track to the list of tracks in the main page and display an alert success message 
+            - The new list-element added to the list will appear with a fade-in transition effect
+            https://getbootstrap.com/docs/4.4/components/alerts/
+            [EXTRA] Make the message disappear after 5 seconds
+            https://www.w3schools.com/jsref/met_win_settimeout.asp
+        -->
+
+    <!-- EXERCISE 12
+            All the field (except for Feat. and Live Track) are required fields and requires validation.
+            If the user clicks on the Add button and some fields are empty, a warning alert must be show
+        -->
+
+    <!-- ############### -->
+    <!-- ###  EXTRA  ### -->
+    <!-- ############### -->
+
+    <!-- EXERCISE 13
+            For each "Album cover" in your page, add a tooltip with the title
+        -->
+
+    <!-- EXERCISE 14
+            Update the header and footer links using scrollspy to render a smooth transition to the parts of the document.
+        -->
+
+    <!-- EXERCISE 15
+            Add a Album Carousel with controls to display the top 10 albums
+        -->
+
+    <!-- EXERCISE 16
+            Make every section of the page "collapsable" if the user clicks on the section title
+        -->
+  </body>
+</html>
